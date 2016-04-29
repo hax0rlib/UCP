@@ -1,5 +1,7 @@
 <?php
-$page = "
+
+$page =
+    "
 <html>
 <title>UCP SA-MP</title>
 <body>
@@ -13,5 +15,5 @@ $page = "
 </font>
 </body>
 </html>";
+
 echo $page;
-?>
