@@ -7,5 +7,6 @@ UCP SA-MP v1.0
 - Perfil
 #Estrutura:
 - PDO and SQL
-- Em Breve v2.0 em MVC e POO totalemnte re-criado
+- Em Breve v2.0 em MVC e POO totalmente re-criado
+
 #Creditos: [iPs]Pedro (por criar a base) and Hax0rlib (por re-criar).
