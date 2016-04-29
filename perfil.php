@@ -8,21 +8,20 @@ include "autoload.php";
 
 session_start();
 
-if(isset($_SESSION['username'])) {
+if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
-    $stmt = $db->prepare("SELECT * FROM player_info WHERE name = ?");
-    $stmt = $db->bindParam(1, $username);
+    $stmt     = $db->prepare("SELECT * FROM player_info WHERE name = ?");
+    $stmt     = $db->bindParam(1, $username);
     $stmt->execute();
 
-        while($row = $stmt->fetch())
-        {
-            $skin     = $row['skin'];
-            $matou    = $row['kills'];
-            $morreu   = $row['kills'];
-            $score    = $row['score'];
-            $dinheiro = $row['money'];
+    while ($row = $stmt->fetch()) {
+        $skin     = $row['skin'];
+        $matou    = $row['kills'];
+        $morreu   = $row['kills'];
+        $score    = $row['score'];
+        $dinheiro = $row['money'];
 
-            $html =
+        $html =
             "<table border = '1' cellspacing = '0' align = 'center'>
                 <tr><td>$username</td></tr>
                 <tr><td>Matou: $matou</td></tr>
@@ -31,8 +30,8 @@ if(isset($_SESSION['username'])) {
                 <tr><td>Dinheiro: $dinheiro</td></tr>
                 <tr><td><img src = 'http://weedarr.wikidot.com/local--files/skinlistc/$skin.png'></img></td></tr>
                 </table>";
-                echo $html;
-        }
+        echo $html;
+    }
 } else {
     header('location: login.php');
 }
