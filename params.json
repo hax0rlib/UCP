@@ -1,0 +1,6 @@
+{
+  "name": "UCP SA-MP v1.0",
+  "tagline": "UCP SA-MP v1.0",
+  "body": "# UCP SA-MP RPG\r\n- UCP SA-MP v1.0\r\n\r\n> Sistemas:\r\n* Cadastro\r\n* Login\r\n* Mudar Skin\r\n* Perfil\r\n\r\n> Estrutura:\r\n* PDO and SQL\r\n* Em Breve v2.0 em MVC e POO totalmente re-criado\r\n\r\n---\r\n\r\n#### Creditos: [iPs]Pedro (por criar a base) and Hax0rlib (por re-criar).\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
